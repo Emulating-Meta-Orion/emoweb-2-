@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const TeamMemberCard = ({ name, role, imageUrl }) => {
   console.log(imageUrl);
   return (

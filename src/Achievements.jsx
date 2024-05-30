@@ -10,7 +10,7 @@ const AchievementPage = () => {
     <div>
       <div className="flex flex-col min-h-screen items-center text-white mt-80 2xl:mt-80">
         {showSecondTypewriter && (
-          <h1 className="text-5xl font-normal md:ml-14 mt-40 text-customBlue">
+          <h1 className="text-3xl 2xl:text-5xl font-normal md:ml-14 mt-40 text-customBlue">
             <Typewriter
               words={['Our Achievements']}
               cursor

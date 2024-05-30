@@ -61,6 +61,10 @@ export const Navbar = () => {
                 <a href='/achievement' className="block text-base text-white hover:text-brandPrimary font-bold cursor-pointer">Achievements</a>
 
               </li>
+              <li>
+                <a href='https://heavenestate.netlify.app/' className="block text-base text-white hover:text-brandPrimary font-bold cursor-pointer">Heavens-Estate</a>
+
+              </li>
             </ul>
 
             <div className="md:hidden">
@@ -93,6 +97,10 @@ export const Navbar = () => {
               </li>
               <li>
                 <a href='/achievement' className="block text-base text-white hover:text-brandPrimary font-bold cursor-pointer">Achievements</a>
+
+              </li>
+              <li>
+                <a href='https://heavenestate.netlify.app/' className="block text-base text-white hover:text-brandPrimary font-bold cursor-pointer">Heavens-Estate</a>
 
               </li>
             </ul>

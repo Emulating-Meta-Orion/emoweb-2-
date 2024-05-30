@@ -42,29 +42,21 @@ export const MyFooter = () => {
   };
 
   return (
-    <Footer className="flex flex-col justify-center items-center px-4 lg:px-14 mx-auto bg-black py-16 mt-" style={{ width: "100%" }}>
+    <Footer className="flex flex-col justify-center items-center px-4 lg:px-14 mx-auto bg-black py-16 mt-1" style={{ width: "100%" }}>
       <div className="w-full">
         <div className="grid w-full justify-around sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div className="space-y-10 2xl:mr-4">
             <a className="text-2xl font-semibold flex items-center space-x-3" href="/">
               <img className="w-2xl inline-block items-center" src={logo} alt="Imagem do logo" />
             </a>
-            <div className="text-white ml-24">
-              <p className="mb-1">Copyright © 2024 EmoDev</p>
-              <p>All rights reserved</p>
-            </div>
-            <div className="flex space-x-6 sm:mt-0 ml-20">
-              <img src={logo1} className="w-12 h-8 ml-4 mr-4" alt="Logo" />
-              <Footer.Icon href="#" icon={BsGithub} className="text-white " />
-              <SiGmail className="bg-white w-7 h-5 ml-4" />
-            </div>
+            
           </div>
           <div className="grid md:grid-cols-1 sm:mt-6 ml-20 2xl:ml-0" style={{ width: "50%", marginTop: "1rem important!" }}>
-            <Footer.Title title="Contact Us" className="text-white text-4xl mt-3" />
+            <Footer.Title title="Contact Us" className="text-white 2xl:text-4xl mt-3" />
             <form id="form" onSubmit={handleSubmit}>
               <div className="my-2">
-                <label htmlFor="name" className="text-white text-2xl">Your Name:</label>
-                <TextInput
+                <label htmlFor="name" className="text-white 2xl:text-2xl">Your Name:</label>
+                <input
                   id="name"
                   type="text"
                   name="name"
@@ -77,7 +69,7 @@ export const MyFooter = () => {
                 />
               </div>
               <div className="my-2">
-                <label htmlFor="email" className="text-white text-2xl">Your Email Address:</label>
+                <label htmlFor="email" className="text-white  2xl:text-2xl">Your Email Address:</label>
                 <input
                   id="email"
                   type="email"
@@ -85,13 +77,13 @@ export const MyFooter = () => {
                   placeholder="Your email address"
                   required
                   ref={emailRef}
-                  className={`w-full ${emailFocused ? 'bg-blue-300' : ''}`}
+                  className={`2xl:w-full ${emailFocused ? 'bg-blue-300' : ''}`}
                   onFocus={() => setEmailFocused(true)}
                   onBlur={() => setEmailFocused(false)}
                 />
               </div>
               <div className="my-2">
-                <label htmlFor="message" className="text-white text-2xl">Your Message:</label>
+                <label htmlFor="message" className="text-white 2xl:text-2xl">Your Message:</label>
                 <Textarea
                   id="message"
                   name="message"
@@ -105,8 +97,18 @@ export const MyFooter = () => {
               </div>
               <Button id="button" type="submit" className="bg-customBlue  text-black w-30 mt-4 py-1 rounded border-blue-400">{loading ? 'Sending...' : 'Send'}</Button>
             </form>
-          </div>
+            <div className="text-white 2xl:ml-[-900px]">
+              <p className="mt-10 mb-2 ml-3">Copyright © 2024 EmoDev</p>
+              <p className="ml-6">All rights reserved</p>
+            </div>
+            <div className="flex space-x-6 mt-6 sm:mt-0 ml-[25px] 2xl:ml-[-900px] 2xl:mt-[50px]">
+              <img src={logo1} className="w-14 h-8" alt="Logo" />
+              <Footer.Icon href="https://github.com/Emulating-Meta-Orion" icon={BsGithub} className="text-white w-7 h-5" />
+              <SiGmail className="bg-white w-12 h-8 ml-4" />
+            </div>
         </div>
+          </div>
+
       </div>
     </Footer>
   );
