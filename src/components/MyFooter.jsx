@@ -2,6 +2,7 @@ import  { useEffect, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import logo from "/assets/emofooter.gif";
 import { SiGmail } from "react-icons/si";
+// eslint-disable-next-line no-unused-vars
 import { Footer, Button, Textarea, TextInput } from "flowbite-react";
 import {  BsGithub } from "react-icons/bs";
 import logo1 from "/assets/EMO_LOGO.png";

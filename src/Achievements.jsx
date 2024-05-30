@@ -34,14 +34,14 @@ const AchievementPage = () => {
         id="achievement2"
         title="Top Performer Award"
         description="Himanshu Kumar Mahto, a talented individual and a member of Team Emo Developers, achieved remarkable success by clinching the top prize in the prestigious Kodethon event organized by JUET, Guna. His exceptional coding skills and problem-solving abilities were on full display during the competition, earning him well-deserved recognition and the first prize. His dedication to the world of coding makes him a standout talent in the field."
-        imageSrc="../public/assets/himanshumahto.jpg"
+        imageSrc="/assets/himanshumahto.jpg"
         videoLink="https://www.youtube.com/watch?v=yourvideoid2"
       />
       <ProjectCard
       id="achievement3"
       title="Runner Ups JUET builds"
       description="Team Emo, featuring the dynamic duo Utkarsh Rai and Vikash Saxena, showcased their innovation prowess at Juet Builds, clinching the second runner-up position. Their creation, the Virtual Calisthenics Simulator, is a testament to their commitment to fitness and technology. This immersive VR app revolutionizes physical fitness, enabling users to engage in calisthenics and various physical activities from the comfort of their homes. Their achievement highlights their dedication to pushing the boundaries of technology and fitness, making them true trailblazers in the field. "
-      imagwSrc="../public/Achievements/JUET Builds.png"
+      imagwSrc="Achievements/JUET Builds.png"
       videoLink="https://www.youtube.com/watch?v=yourvideoid3"
       />
     </div>
